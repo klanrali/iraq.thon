@@ -11,7 +11,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
 HELPTYPE = Config.HELP_INLINETYPE or True
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="help ?(.*)"))
+@bot.on(admin_cmd(outgoing=True, pattern="helpiraqthon ?(.*)"))
 async def cmd_list(event):
     global HELPTYPE
     reply_to_id = None
@@ -87,7 +87,7 @@ async def cmd_list(event):
             await event.edit(string.format(count=catcount), parse_mode="HTML")
 
 
-@bot.on(sudo_cmd(allow_sudo=True, pattern="help ?(.*)"))
+@bot.on(sudo_cmd(allow_sudo=True, pattern="helpiraqthoon ?(.*)"))
 async def info(event):
     input_str = event.pattern_match.group(1)
     if input_str == "text":
