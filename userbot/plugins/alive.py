@@ -23,13 +23,15 @@ async def amireallyalive(alive):
     if alive.reply_to_msg_id:
         reply_to_id = await alive.get_reply_message()
     if CAT_IMG:
-        cat_caption = f"**✮ MY BOT IS RUNNING SUCCESFULLY ✮**\n\n"
-        cat_caption += f"**✧ Database :** `{check_sgnirts}`\n"
-        cat_caption += f"**✧ Telethon Version :** `{version.__version__}\n`"
-        cat_caption += f"**✧ Catuserbot Version :** `{catversion}`\n"
-        cat_caption += f"**✧ Python Version :** `{python_version()}\n`"
-        cat_caption += f"**✧ Uptime :** `{uptime}\n`"
-        cat_caption += f"**✧ My Master:** [{DEFAULTUSER}](tg://user?id={hmm})\n"
+        cat_caption = f"⌔︙🕷🇮🇶 IRAQTHON BOT\n"
+        cat_caption += f"⌔︙🕷🇮🇶 Created By: [CH KLANR](https://t.me/RXXRX) || [CH IQ](https://t.me/IQTHON)\n"
+        cat_caption += f"⌔︙🕷🇮🇶 Version: 1.0.1\n"
+        cat_caption += (
+            f"⌔︙🕷🇮🇶 The repo iraq: [Here](https://github.com/klanrali/iraq.thon)\n"
+        )
+        cat_caption += f"⌔︙🕷🇮🇶 Python Version : `{python_version()}\n`"
+        cat_caption += f"⌔︙🕷🇮🇶 Uptime : `{uptime}\n`"
+        cat_caption += f"⌔︙🕷🇮🇶 My Master: [{DEFAULTUSER}](tg://user?id={hmm})\n"
         await borg.send_file(
             alive.chat_id, CAT_IMG, caption=cat_caption, reply_to=reply_to_id
         )
@@ -37,17 +39,17 @@ async def amireallyalive(alive):
     else:
         await edit_or_reply(
             alive,
-            f"**✮ MY BOT IS RUNNING SUCCESFULLY ✮**\n\n"
-            f"**✧ Database :** `{check_sgnirts}`\n"
-            f"**✧ Telethon Version :** `{version.__version__}\n`"
-            f"**✧ Catuserbot Version :** `{catversion}`\n"
-            f"**✧ Python Version :** `{python_version()}\n`"
-            f"**✧ Uptime :** `{uptime}\n`"
-            f"**✧ My Master:** [{DEFAULTUSER}](tg://user?id={hmm})\n",
+            f"⌔︙🕷🇮🇶 IRAQTHON BOT\n\n"
+            f"⌔︙🕷🇮🇶 Created By: [CH KLANR](https://t.me/RXXRX) || [CH IQ](https://t.me/IQTHON)\n"
+            f"⌔︙🕷🇮🇶 Version: 1.0.1\n"
+            f"⌔︙🕷🇮🇶 The repo iraq: [Here](https://github.com/klanrali/iraq.thon)\n"
+            f"⌔︙🕷🇮🇶 Python Version : `{python_version()}\n`"
+            f"⌔︙🕷🇮🇶 Uptime : `{uptime}\n`"
+            f"⌔︙🕷🇮🇶 My Master: [{DEFAULTUSER}](tg://user?id={hmm})\n",
         )
 
 
-@borg.on(admin_cmd(outgoing=True, pattern="ialive$"))
+@borg.on(admin_cmd(outgoing=True, pattern="cugialivenk$"))
 @borg.on(sudo_cmd(pattern="ialive$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
